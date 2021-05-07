@@ -2,7 +2,9 @@
 Code test creating a grocery store app in Ruby on Rails
 
 Objective:
-Complete as many tasks as you can. You do NOT need to complete every single task so if you get stuck, please reach out. We are happy to help. This isn't a pass or fail test, it will give us an idea where you are as a developer. There are *Bonus* objectives. Please feel free to complete those even if you haven't completed all the other tasks.
+Complete as many tasks as you can. You do NOT need to complete every single task so if you get stuck, please reach out. We are happy to help. This isn't a pass or fail test, it will give us an idea where you are as a developer. There are *Bonus* objectives. Please feel free to complete those even if you haven't completed all the other tasks. You are receiving a blank slate of a project so you will need to start from scratch. Give yourself plenty of time to accomplish as many tasks as you can.
+
+When you have finished, please send a link of your repo for us to review to: bradleyfindeis@randallreilly.com and timnelson@randallreilly.com
 
 Overview: 
 This is a grocery store app. Think about your grocery store and go from there. You need to create an app that will at the very least do the following:
@@ -13,7 +15,8 @@ This is a grocery store app. Think about your grocery store and go from there. Y
   5. Apply coupons/discount codes to a product
   6. Checkout with a fake payment
 
-Tasks: 
+Tasks:
+1. Clone this repo and create your own repo on github
 1. Create a User table that has these fields:
   - First name *required
   - Last name *required
