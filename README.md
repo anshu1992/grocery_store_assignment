@@ -1,24 +1,100 @@
-# README
+# Grocery Store App
+Code test creating a grocery store app in Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Objective:
+Complete as many tasks as you can. You do NOT need to complete every single task and if you get stuck, please reach out. We are happy to help. This isn't a pass or fail test, it will give us an idea where you are as a developer. There are *Bonus* objectives. Please feel free to complete those even if you haven't completed all the other tasks.
 
-Things you may want to cover:
+Overview: 
+This is a grocery store app. Think about your grocery store and go from there. You need to create an app that will do the following:
+  1. Allow a user to sign in and have an account
+  2. Be able to add products to their cart
+  3. See a running total of what is in their cart
+  4. Apply coupons/discount codes to a product
+  5. Checkout with a fake payment
 
-* Ruby version
+Tasks: 
+1. Create a User table that has these fields:
+  - First name *required
+  - Last name *required
+  - Email *required
+  - Phone number *required
+  - Birthdate
+  - Address
+  - City
+  - Zip code
+  - State
 
-* System dependencies
+2. Create a Category table that has these fields:
+  - Produce
+  - Dairy
+  - Bakery
+  - Deli
 
-* Configuration
+3. Create a Product table that should belong to a Category with these fields:
+  - Title
+  - Description
+  - Picture
+  - Price
+  
+  The products should be populated with these at a minimum but feel free to add more:
+  - Produce
+    - Broccoli
+    - Lettuce
+    - Carrots
+    - Bananas
+    - Apples
+    - Grapes
+    - Oranges
+    - Watermelon
+    - Squash
+    - Peppers
+    - Potatos
+  - Dairy
+    - Milk
+    - Cheese
+    - Butter
+    - Buttermilk
+    - Eggs
+    - Heavy Cream
+    - Almond Milk
+  - Bakery
+    - Rolls
+    - Cookies
+    - Cake
+    - Bread
+    - French Loaf
+    - Cupcakes
+    - Doughnuts
+    - Bagles
+  - Deli
+    - Sliced Ham
+    - Sliced Chicken
+    - Sliced Turkey
+    - Sliced Cheddar Cheese
+    - Sliced Pepperjack Cheese
+    - Sliced Provolone Cheese
+    - Sliced Swiss Cheese
 
-* Database creation
+4. Create a Sign up/in page for a user to create an account and sign in
 
-* Database initialization
+5. Create a page for a User to browse through the products and see each Product with it's title, description, picture and price
 
-* How to run the test suite
+6. Create a Shopping cart feature that will allow a User to add Products and remove Products from their cart
 
-* Services (job queues, cache servers, search engines, etc.)
+7. Create a Checkout page that will allow a user to see everything in their cart along with their total price. Allow the user to remove items from their cart as well as "check out"
 
-* Deployment instructions
+8. Create a Coupon/discount code mananger feature. You can create one from scratch or you can impliment a gem. This feature shoudl allow an Admin to set a discount for a product until a specific date. The user should see that the Product has a coupon/discount and be able to click a button to "Apply Coupon" in their cart. This should change the total of the price for that item to the coupon/disounted price and their total should change as well.
 
-* ...
+9. Set up a fake payment process to allow the user to "Check out"
+
+10. Provide some kind of user feedback that they have successfully check out and their order has been received and will be processed soon. 
+
+
+*BONUS*
+Remember these are bonus features. You should work to complete as many of the tasks above first but if you're stuck and want to add some of these, that is fine.
+
+1. Use Vue as your frontend
+2. Create a Order History table and save the User's orders
+3. Create a "Quick Order" feature that would allow a User to name an order and select that order to populate their cart with all the Products in that selected order.
+4. Add some fun feedback for the User when they successfully checkout. Maybe some confetti, thumbs up emoji, or a dancing grandma gif, etc... Make the user experience fun and enjoyable
+5. Add some Easter Eggs to make the shopping experience unique. One idea would be if the user selects certain products in a certain order they get their order for free, or if a user is only selecting healthy food, you reward them with free Lettuce or something. Feel free to add some fun things to the app as well as your code. We have fun here so we like to see you having fun too!
