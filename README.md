@@ -8,9 +8,10 @@ Overview:
 This is a grocery store app. Think about your grocery store and go from there. You need to create an app that will do the following:
   1. Allow a user to sign in and have an account
   2. Be able to add products to their cart
-  3. See a running total of what is in their cart
-  4. Apply coupons/discount codes to a product
-  5. Checkout with a fake payment
+  3. Have multiple routes (home, my_account, admin, sign in, sign up, cart, checkout, payment, etc...)
+  4. See a running total of what is in their cart
+  5. Apply coupons/discount codes to a product
+  6. Checkout with a fake payment
 
 Tasks: 
 1. Create a User table that has these fields:
