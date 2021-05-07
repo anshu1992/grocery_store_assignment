@@ -77,17 +77,19 @@ Tasks:
 
 4. Create a Sign up/in page for a user to create an account and sign in
 
-5. Create a page for a User to browse through the products and see each Product with it's title, description, picture and price
+5. Create a home page for a User to browse through the products and see each Product with it's title, description, picture and price. This should include all the products.
 
-6. Create a Shopping cart feature that will allow a User to add Products and remove Products from their cart
+6. Create a feature that you can search and/or filter by category or product title 
 
-7. Create a Checkout page that will allow a user to see everything in their cart along with their total price. Allow the user to remove items from their cart as well as "check out"
+7. Create a Shopping cart feature that will allow a User to add Products and remove Products from their cart
 
-8. Create a Coupon/discount code mananger feature. You can create one from scratch or you can impliment a gem. This feature shoudl allow an Admin to set a discount for a product until a specific date. The user should see that the Product has a coupon/discount and be able to click a button to "Apply Coupon" in their cart. This should change the total of the price for that item to the coupon/disounted price and their total should change as well.
+8. Create a Checkout page that will allow a user to see everything in their cart along with their total price. Allow the user to remove items from their cart as well as "check out"
 
-9. Set up a fake payment process to allow the user to "Check out"
+9. Create a Coupon/discount code mananger feature. You can create one from scratch or you can impliment a gem. This feature shoudl allow an Admin to set a discount for a product until a specific date. The user should see that the Product has a coupon/discount and be able to click a button to "Apply Coupon" in their cart. This should change the total of the price for that item to the coupon/disounted price and their total should change as well.
 
-10. Provide some kind of user feedback that they have successfully check out and their order has been received and will be processed soon. 
+10. Set up a fake payment process to allow the user to "Check out"
+
+11. Provide some kind of user feedback that they have successfully check out and their order has been received and will be processed soon. 
 
 
 *BONUS*
