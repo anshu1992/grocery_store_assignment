@@ -12,8 +12,8 @@ This is a grocery store app. Think about your grocery store and go from there. Y
   2. Be able to add products to their cart
   3. Have multiple routes (home, my_account, admin, sign in, sign up, cart, checkout, payment, etc...)
   4. See a running total of what is in their cart
-  5. Apply coupons/discount codes to a product
-  6. Checkout with a fake payment
+  5. Create RSPEC tests on Product Controller
+  6. Apply coupons/discount codes to a product
 
 Tasks:
 1. Clone this repo and create your own repo on github
@@ -35,10 +35,10 @@ Tasks:
   - Deli
 
 3. Create a Product table that should belong to a Category with these fields:
-  - Title
-  - Description
-  - Picture
-  - Price
+  - Title *required
+  - Description *required
+  - Picture *required
+  - Price *required
   
   The products should be populated with these at a minimum but feel free to add more:
   - Produce
@@ -87,15 +87,15 @@ Tasks:
 
 7. Create a home page for a User to browse through the products and see each Product with it's title, description, picture and price. This should include all the products.
 
-8. Use a deisgn library to make your app look good with the least amount of effort. You can use whichever library you prefer. 
+8. Write RSPEC tests to make sure you can add, remove and update products without any issues
 
-9. Create a feature that you can search and/or filter by category or product title 
+9. Use a deisgn library to make your app look good with the least amount of effort. You can use whichever library you prefer. 
 
-10. Create a Shopping cart feature that will allow a User to add Products and remove Products from their cart
+10. Create a feature that you can search and/or filter by category or product title 
 
-11. Create a Checkout page that will allow a user to see everything in their cart along with their total price. Allow the user to remove items from their cart as well as "check out"
+11. Create a Shopping cart feature that will allow a User to add Products and remove Products from their cart
 
-12. Set up a fake payment process to allow the user to "Check out"
+12. Create a Checkout page that will allow a user to see everything in their cart along with their total price. Allow the user to remove items from their cart as well as "check out"
 
 13. Provide some kind of user feedback that they have successfully check out and their order has been received and will be processed soon. 
 
@@ -104,8 +104,8 @@ Tasks:
 Remember these are bonus features. You should work to complete as many of the tasks above first but if you're stuck and want to add some of these, that is fine.
 
 1. Use Vue as your frontend
-2. Write tests to make sure you can add, remove and update products
 3. Create a Order History table and save the User's orders
 4. Create a "Quick Order" feature that would allow a User to name an order and select that order to populate their cart with all the Products in that selected order.
-5. Add some fun feedback for the User when they successfully checkout. Maybe some confetti, thumbs up emoji, or a dancing grandma gif, etc... Make the user experience fun and enjoyable
-6. Add some Easter Eggs to make the shopping experience unique. One idea would be if the user selects certain products in a certain order they get their order for free, or if a user is only selecting healthy food, you reward them with free Lettuce or something. Feel free to add some fun things to the app as well as your code. We have fun here so we like to see you having fun too!
+5. Set up a fake payment process to allow the user to "Check out"
+6. Add some fun feedback for the User when they successfully checkout. Maybe some confetti, thumbs up emoji, or a dancing grandma gif, etc... Make the user experience fun and enjoyable
+7. Add some Easter Eggs to make the shopping experience unique. One idea would be if the user selects certain products in a certain order they get their order for free, or if a user is only selecting healthy food, you reward them with free Lettuce or something. Feel free to add some fun things to the app as well as your code. We have fun here so we like to see you having fun too!
