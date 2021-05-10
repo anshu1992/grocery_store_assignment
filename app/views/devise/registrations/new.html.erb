@@ -1,0 +1,19 @@
+<h2>Sign up</h2>
+
+<%= bootstrap_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+  <%= f.text_field :first_name, placeholder: "John" %>
+  <%= f.text_field :last_name, placeholder: "Doe" %>
+  <%= f.email_field :email, autocomplete: "email", placeholder: "youremail@example.com" %>
+  <%= f.password_field :password, placeholder: "StrongPass^773$", help: "Must be atleast #{@minimum_password_length} characters long" %>
+  <%= f.password_field :password_confirmation, placeholder: "StrongPass^773$" %>
+  <%= f.text_field :phone_number, placeholder: "5417543010" %>
+  <%= f.date_select :birthdate %>
+  <%= f.text_field :address, placeholder: "132, My Street, Kingston, New York 12401" %>
+  <%= f.text_field :city, placeholder: "New York" %>
+  <%= f.text_field :state, placeholder: "New York" %>
+  <%= f.text_field :zip_code, placeholder: "12401" %>
+  <%= f.submit "Sign up" %>
+<% end %>
+
+<%= render "devise/shared/links" %>

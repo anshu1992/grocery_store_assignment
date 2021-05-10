@@ -25,6 +25,11 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# User authentication
+gem 'devise'
+# Bootstrap form for styling forms with BS4
+gem "bootstrap_form", "~> 4.0"
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 

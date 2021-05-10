@@ -6,6 +6,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,5 +14,6 @@
   <body>
     <%= content_for?(:header) ? yield(:header) : render("header") %>
     <%= content_for?(:container) ? yield(:container) : render("container") %>
+    <%= render partial: "toastr_flash_message" %>
   </body>
 </html>

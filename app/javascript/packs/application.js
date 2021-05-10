@@ -10,6 +10,9 @@ import "channels"
 
 import "bootstrap";
 import "../stylesheets/application"
+import toastr from 'toastr'
+
+global.toastr = toastr
 
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip()
