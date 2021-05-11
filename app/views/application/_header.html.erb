@@ -7,9 +7,13 @@
     <div class="navbar-nav mr-auto mt-2 mt-lg-0">
     </div>
     <% if signed_in? %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-sm btn-danger border" %>
+      <%= link_to carts_path, class: "mr-3 shopping-cart-link" do %>
+        <i class="fas fa-shopping-cart fa-2x"></i>
+        <i id="show_order_quantity_cart" class="badge badge-primary"><%= current_order.quantity_of_line_items %></i>
+      <% end %>
+      <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-sm btn-danger" %>
     <% else %>
-      <%= link_to "Sign In", new_user_session_path, class: "btn btn-sm btn-primary border" %>
+      <%= link_to "Sign In", new_user_session_path, class: "btn btn-sm btn-primary" %>
     <% end %>
   </div>
 </nav>

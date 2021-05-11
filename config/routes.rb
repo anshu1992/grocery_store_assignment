@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   resources :products
   resources :categories
+  resources :line_items
+  resource :carts, only:[:show]
   devise_for :users
 
   root to: "home#index"

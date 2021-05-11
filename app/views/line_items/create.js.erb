@@ -1,0 +1,6 @@
+var form_selector = "#<%= dom_id(@product) %> .home-page-line-item-form"
+var form = "<%= j render("line_items/form", product: @product) %>"
+var line_item_quantity = "<%= current_order.quantity_of_line_items %>"
+
+$(form_selector).html(form)
+$("#show_order_quantity_cart").html(line_item_quantity)

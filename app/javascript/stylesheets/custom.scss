@@ -1,0 +1,7 @@
+// Remove text underline and enforce same color on hovering shopping cart link
+.shopping-cart-link {
+  &:hover {
+    text-decoration: none;
+    color: #007bff;
+  }
+}

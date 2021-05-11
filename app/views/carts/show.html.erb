@@ -1,0 +1,17 @@
+<h1 class="mb-4">Your Cart</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody id="cart_listing">
+    <%= render "line_item_list", line_items: @line_items %>
+  </tbody>
+</table>

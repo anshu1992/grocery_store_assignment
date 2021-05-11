@@ -1,3 +1,26 @@
-<p>
-  Welcome To Your Favorite Grocery Store
-</p>
+<h1 class="mb-4">Welcome to your favorite grocery store</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr id="<%= dom_id(product) %>">
+        <td><%= product.title %></td>
+        <td><%= product.description %></td>
+        <td><%= product.price %></td>
+        <td><%= product.category_title %></td>
+        <td><%= link_to 'Show', product %></td>
+        <td class="home-page-line-item-form"><%= render "line_items/form", product: product %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

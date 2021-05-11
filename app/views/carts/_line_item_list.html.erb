@@ -1,0 +1,10 @@
+<% line_items.each do |line_item| %>
+  <tr id="<%= dom_id(line_item) %>">
+    <td><%= line_item.product_title %></td>
+    <td><%= line_item.product_description %></td>
+    <td><%= line_item.product_price %></td>
+    <td><%= line_item.product_category_title %></td>
+    <td><%= link_to 'Show', line_item.product %></td>
+    <td class="cart-page-line-item-form"><%= render "carts/form", product: line_item.product, line_item: line_item %></td>
+  </tr>
+<% end %>
