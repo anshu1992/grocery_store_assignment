@@ -1,6 +1,11 @@
 <h1 class="mb-4">Welcome to your favorite grocery store</h1>
 
-<div class="table-responsive">
+<%= bootstrap_form_tag url: root_path, method: :get, remote: true, layout: :inline do |form| %>
+  <%= form.text_field :query, value: params[:query], hide_label: true, placeholder: "Search Products" %>
+  <%= form.submit "Search Products", data: { disable_with: "Searching..." } %>
+<% end %>
+
+<div class="table-responsive mt-3">
   <table class="table">
     <thead>
       <tr>
@@ -11,7 +16,7 @@
         <th colspan="3"></th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="products">
       <% if @products.any? %>
         <%= render "list", products: @products %>
       <% else %>
