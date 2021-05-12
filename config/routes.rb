@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resource :carts, only: [:show]
   resources :coupons do
     post :apply_coupon, on: :collection
+    post :remove_coupon, on: :member
   end
   resources :checkouts, only: [:create] do
     get :confirmation, on: :collection

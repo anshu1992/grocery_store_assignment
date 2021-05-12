@@ -1,6 +1,10 @@
-<%= bootstrap_form_tag url: apply_coupon_coupons_path, remote: true, layout: :inline  do |f| %>
-  <%= hidden_field_tag :product_id, {}, value: line_item.product_id %>
-  <%= hidden_field_tag :line_item_id, {}, value: line_item.id %>
-  <%= text_field_tag :code, {}, hide_label: true, placeholder: "Coupon Code" %>
-  <%= f.submit "Apply Code" %>
+<% if line_item.coupon.present? %>
+  <%= button_to "Remove #{line_item.coupon.code}", remove_coupon_coupon_path(line_item.coupon, line_item_id: line_item.id), method: :post, remote: true, class: "btn btn-danger border", data: { disable_with: "Removing..." } %>
+<% else %>
+  <%= bootstrap_form_tag url: apply_coupon_coupons_path, remote: true, layout: :inline  do |f| %>
+    <%= hidden_field_tag :product_id, {}, value: line_item.product_id %>
+    <%= hidden_field_tag :line_item_id, {}, value: line_item.id %>
+    <%= text_field_tag :code, {}, hide_label: true, placeholder: "Coupon Code" %>
+    <%= f.submit "Apply Code" %>
+  <% end %>
 <% end %>
