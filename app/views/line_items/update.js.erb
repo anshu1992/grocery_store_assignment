@@ -1,5 +1,7 @@
 var list = "<%= j render("carts/line_item_list", line_items: @line_items) %>"
 var line_item_quantity = "<%= current_order.quantity_of_line_items %>"
+var total_amount = "Amount to be paid: <%= number_to_currency(current_order.subtotal) %>"
 
 $('#cart_listing').html(list)
 $("#show_order_quantity_cart").html(line_item_quantity)
+$("#calculated_amount").html(total_amount)

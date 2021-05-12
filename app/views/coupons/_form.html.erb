@@ -1,0 +1,6 @@
+<%= bootstrap_form_tag url: apply_coupon_coupons_path, remote: true, layout: :inline  do |f| %>
+  <%= hidden_field_tag :product_id, {}, value: line_item.product_id %>
+  <%= hidden_field_tag :line_item_id, {}, value: line_item.id %>
+  <%= text_field_tag :code, {}, hide_label: true, placeholder: "Coupon Code" %>
+  <%= f.submit "Apply Code" %>
+<% end %>

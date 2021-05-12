@@ -9,11 +9,13 @@ class Order < ApplicationRecord
   before_save :set_subtotal
 
   def subtotal
-    line_items.collect { |item| item.unit_price*item.quantity }.sum
+    line_items.map(&:subtotal).sum
   end
 
   def quantity_of_line_items
-    line_items.map(&:quantity).sum
+    # includes new line item too and so we need to use compact before calling sum
+
+    line_items.map(&:quantity).compact.sum
   end
 
   private

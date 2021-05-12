@@ -1,0 +1,10 @@
+<% products.each do |product| %>
+  <tr id="<%= dom_id(product) %>">
+    <td><%= product.title %></td>
+    <td><%= product.description %></td>
+    <td><%= number_to_currency(product.price) %></td>
+    <td><%= product.category_title %></td>
+    <td><%= link_to 'Show', product %></td>
+    <td class="home-page-line-item-form"><%= render "line_items/form", product: product %></td>
+  </tr>
+<% end %>

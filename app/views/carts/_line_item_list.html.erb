@@ -2,9 +2,11 @@
   <tr id="<%= dom_id(line_item) %>">
     <td><%= line_item.product_title %></td>
     <td><%= line_item.product_description %></td>
-    <td><%= line_item.product_price %></td>
+    <td><%= number_to_currency(line_item.product_price) %></td>
     <td><%= line_item.product_category_title %></td>
-    <td><%= link_to 'Show', line_item.product %></td>
+    <td><%= line_item.product.coupons.map(&:code).split(",").join(" | ") %><td>
+    <td><%= number_to_currency(line_item.subtotal) %>
+    <td><%= render "coupons/form", line_item: line_item %></td>
     <td class="cart-page-line-item-form"><%= render "carts/form", product: line_item.product, line_item: line_item %></td>
   </tr>
 <% end %>

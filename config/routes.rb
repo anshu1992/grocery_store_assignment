@@ -4,7 +4,13 @@ Rails.application.routes.draw do
   resources :products
   resources :categories
   resources :line_items
-  resource :carts, only:[:show]
+  resource :carts, only: [:show]
+  resources :coupons do
+    post :apply_coupon, on: :collection
+  end
+  resources :checkouts, only: [:create] do
+    get :confirmation, on: :collection
+  end
   devise_for :users
 
   root to: "home#index"
