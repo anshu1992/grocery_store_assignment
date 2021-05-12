@@ -73,7 +73,7 @@ RSpec.describe ProductsController, type: :controller do
 
   describe "#edit" do
     it "responds successfully for non-native release" do
-      product = create(:product)
+      product = create(:product, category: category)
 
       get :edit, params: { id: product.id, product: product_params }
 
@@ -82,7 +82,7 @@ RSpec.describe ProductsController, type: :controller do
   end
 
   describe "#update" do
-    let(:product) { create(:product) }
+    let(:product) { create(:product, category: category) }
 
     it "responds successfully" do
       patch :update, params: { id: product.id, product: product_params }
@@ -106,7 +106,7 @@ RSpec.describe ProductsController, type: :controller do
   end
 
   describe "#destroy" do
-    let!(:product) { create(:product) }
+    let!(:product) { create(:product, category: category) }
 
     it "responds with redirect" do
       delete :destroy, params: { id: product }

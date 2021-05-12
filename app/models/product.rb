@@ -16,6 +16,9 @@ class Product < ApplicationRecord
     against: [:title, :description],
     using: {
       tsearch: { any_word: true, prefix: true }
+    },
+    associated_against: {
+      category: [:title]
     }
   }
 end
