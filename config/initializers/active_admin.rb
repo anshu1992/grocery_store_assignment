@@ -331,5 +331,6 @@ ActiveAdmin.setup do |config|
   # By default, Active Admin uses Sprocket's asset pipeline.
   # You can switch to using Webpacker here.
   #
+  config.skip_before_action :authenticate_user!
   config.use_webpacker = true
 end
